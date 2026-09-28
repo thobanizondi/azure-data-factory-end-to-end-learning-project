@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'azure_sql_demo_db'"
 		},
+		"LS_ADLS_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://azuredatastoragethobani.dfs.core.windows.net/"
+		},
 		"azure_sql_demo_db_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "demo-server-thobani.database.windows.net"
@@ -52,6 +56,9 @@
 					},
 					"azure_sql_demo_db_password": {
 						"value": "[parameters('azure_sql_demo_db_password')]"
+					},
+					"LS_ADLS_properties_typeProperties_url": {
+						"value": "[parameters('LS_ADLS_properties_typeProperties_url')]"
 					},
 					"azure_sql_demo_db_properties_typeProperties_server": {
 						"value": "[parameters('azure_sql_demo_db_properties_typeProperties_server')]"
